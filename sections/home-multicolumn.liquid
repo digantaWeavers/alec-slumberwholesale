@@ -76,6 +76,9 @@
             {% endif %}
           >
             <div class="multicolumn-card content-container">
+              {%- if block.settings.link_label == blank and block.settings.link != blank -%}
+                <a href="{{ block.settings.link }}">
+              {%- endif -%}
               {%- if block.settings.image != blank -%}
                 {% if section.settings.image_ratio == 'adapt' or section.settings.image_ratio == 'circle' %}
                   {% assign spaced_image = true %}
@@ -125,8 +128,8 @@
                   }
                 {% endstyle %}
                 {%- if block.settings.caption != blank -%}
-                    <h3 class="caption-text" id=block-{{ block.id }}>{{ block.settings.caption }}</h3>
-                  {%- endif -%}
+                  <h3 class="caption-text" id="block-{{ block.id }}">{{ block.settings.caption }}</h3>
+                {%- endif -%}
                 {%- if block.settings.title != blank -%}
                   <h3 class="inline-richtext">{{ block.settings.title }}</h3>
                 {%- endif -%}
@@ -149,6 +152,9 @@
                   </a>
                 {%- endif -%}
               </div>
+              {%- if block.settings.link_label == blank and block.settings.link != blank -%}
+                </a>
+              {%- endif -%}
             </div>
           </li>
         {%- endfor -%}
@@ -406,15 +412,15 @@
           "label": "t:sections.multicolumn.blocks.column.settings.image.label"
         },
         {
-            "type": "text",
-            "id": "caption",
-            "default": "New Product!",
-            "label": "Caption"
+          "type": "text",
+          "id": "caption",
+          "default": "New Product!",
+          "label": "Caption"
         },
         {
-            "type": "color",
-            "id": "caption_color",
-            "label": "Caption text color"
+          "type": "color",
+          "id": "caption_color",
+          "label": "Caption text color"
         },
         {
           "type": "inline_richtext",
