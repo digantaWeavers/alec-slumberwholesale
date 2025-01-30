@@ -32,21 +32,21 @@
                     </div>
                   {%- endif -%}
                   {%- if block.settings.review_heading != blank -%}
-                    <h4 style="color: {{ section.settings.text_color }}">
+                    <h4>
                       {{ block.settings.review_heading | remove: '<p>' | remove: '</p>' }}
                     </h4>
                   {%- endif -%}
                   {%- if block.settings.customer_review != blank -%}
-                    <p style="color: {{ section.settings.text_color }}">{{ block.settings.customer_review }}</p>
+                    <p>{{ block.settings.customer_review }}</p>
                   {%- endif -%}
                   <div class="user-info">
                     {%- if block.settings.customer_name != blank -%}
-                      <p style="color: {{ section.settings.text_color }}">
+                      <p>
                         <span>{{ block.settings.customer_name }}</span>
                       </p>
                     {%- endif -%}
                     {%- if block.settings.show_verified != blank -%}
-                      <p style="color: {{ section.settings.text_color }}">Verified Customer</p>
+                      <p>Verified Customer</p>
                     {%- endif -%}
                   </div>
                 </div>
