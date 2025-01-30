@@ -10,6 +10,47 @@
 {%- endstyle -%}
 
 <div class="collection-hero{% if section.settings.show_collection_image and collection.image %} collection-hero--with-image{% endif %} color-{{ section.settings.color_scheme }} gradient">
+  {%- if section.settings.show_collection_image and collection.image -%}
+    <div class="collection-hero__image-container media gradient">
+      <img
+        srcset="
+          {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
+          {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
+          {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
+          {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
+          {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
+          {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
+          {{ collection.image | image_url }} {{ collection.image.width }}w
+        "
+        src="{{ collection.image | image_url: width: 750 }}"
+        sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
+        alt="{{ collection.image.alt | escape }}"
+        width="{{ collection.image.width }}"
+        height="{{ collection.image.height }}"
+      >
+    </div>
+  {%- else -%}
+    {%- if section.settings.collection_bg_image != blank -%}
+      <div class="collection-hero__image-container-bg for_desktop">
+        <img
+          srcset="
+            {%- if section.settings.collection_bg_image.width >= 165 -%}{{ section.settings.collection_bg_image | image_url: width: 165 }} 165w,{%- endif -%}
+            {%- if section.settings.collection_bg_image.width >= 360 -%}{{ section.settings.collection_bg_image | image_url: width: 360 }} 360w,{%- endif -%}
+            {%- if section.settings.collection_bg_image.width >= 535 -%}{{ section.settings.collection_bg_image | image_url: width: 535 }} 535w,{%- endif -%}
+            {%- if section.settings.collection_bg_image.width >= 750 -%}{{ section.settings.collection_bg_image | image_url: width: 750 }} 750w,{%- endif -%}
+            {%- if section.settings.collection_bg_image.width >= 1070 -%}{{ section.settings.collection_bg_image | image_url: width: 1070 }} 1070w,{%- endif -%}
+            {%- if section.settings.collection_bg_image.width >= 1500 -%}{{ section.settings.collection_bg_image | image_url: width: 1500 }} 1500w,{%- endif -%}
+            {{ section.settings.collection_bg_image | image_url }} {{ section.settings.collection_bg_image.width }}w
+          "
+          src="{{ section.settings.collection_bg_image | image_url: width: 750 }}"
+          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
+          alt="{{ section.settings.collection_bg_image.alt | escape }}"
+          width="{{ section.settings.collection_bg_image.width }}"
+          height="{{ section.settings.collection_bg_image.height }}"
+        >
+      </div>
+    {%- endif -%}
+  {%- endif -%}
   <div class="collection-hero__inner page-width {% if settings.animations_reveal_on_scroll %} scroll-trigger animate--fade-in{% endif %}">
     <div class="collection-hero__text-wrapper">
       <h1 class="collection-hero__title">
@@ -25,68 +66,6 @@
         <div class="collection-hero__description rte">{{ collection.description }}</div>
       {%- endif -%}
     </div>
-
-    {%- if section.settings.show_collection_image and collection.image -%}
-      <div class="collection-hero__image-container media gradient">
-        <img
-          srcset="
-            {%- if collection.image.width >= 165 -%}{{ collection.image | image_url: width: 165 }} 165w,{%- endif -%}
-            {%- if collection.image.width >= 360 -%}{{ collection.image | image_url: width: 360 }} 360w,{%- endif -%}
-            {%- if collection.image.width >= 535 -%}{{ collection.image | image_url: width: 535 }} 535w,{%- endif -%}
-            {%- if collection.image.width >= 750 -%}{{ collection.image | image_url: width: 750 }} 750w,{%- endif -%}
-            {%- if collection.image.width >= 1070 -%}{{ collection.image | image_url: width: 1070 }} 1070w,{%- endif -%}
-            {%- if collection.image.width >= 1500 -%}{{ collection.image | image_url: width: 1500 }} 1500w,{%- endif -%}
-            {{ collection.image | image_url }} {{ collection.image.width }}w
-          "
-          src="{{ collection.image | image_url: width: 750 }}"
-          sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-          alt="{{ collection.image.alt | escape }}"
-          width="{{ collection.image.width }}"
-          height="{{ collection.image.height }}"
-        >
-      </div>
-    {%- else -%}
-      {%- if section.settings.collection_bg_image != blank -%}
-        <div class="collection-hero__image-container-bg for_desktop">
-          <img
-            srcset="
-              {%- if section.settings.collection_bg_image.width >= 165 -%}{{ section.settings.collection_bg_image | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if section.settings.collection_bg_image.width >= 360 -%}{{ section.settings.collection_bg_image | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if section.settings.collection_bg_image.width >= 535 -%}{{ section.settings.collection_bg_image | image_url: width: 535 }} 535w,{%- endif -%}
-              {%- if section.settings.collection_bg_image.width >= 750 -%}{{ section.settings.collection_bg_image | image_url: width: 750 }} 750w,{%- endif -%}
-              {%- if section.settings.collection_bg_image.width >= 1070 -%}{{ section.settings.collection_bg_image | image_url: width: 1070 }} 1070w,{%- endif -%}
-              {%- if section.settings.collection_bg_image.width >= 1500 -%}{{ section.settings.collection_bg_image | image_url: width: 1500 }} 1500w,{%- endif -%}
-              {{ section.settings.collection_bg_image | image_url }} {{ section.settings.collection_bg_image.width }}w
-            "
-            src="{{ section.settings.collection_bg_image | image_url: width: 750 }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-            alt="{{ section.settings.collection_bg_image.alt | escape }}"
-            width="{{ section.settings.collection_bg_image.width }}"
-            height="{{ section.settings.collection_bg_image.height }}"
-          >
-        </div>
-      {%- endif -%}
-      {%- if section.settings.collection_bg_imagemob != blank -%}
-        <div class="collection-hero__image-container-bg for_desktop">
-          <img
-            srcset="
-              {%- if section.settings.collection_bg_imagemob.width >= 165 -%}{{ section.settings.collection_bg_imagemob | image_url: width: 165 }} 165w,{%- endif -%}
-              {%- if section.settings.collection_bg_imagemob.width >= 360 -%}{{ section.settings.collection_bg_imagemob | image_url: width: 360 }} 360w,{%- endif -%}
-              {%- if section.settings.collection_bg_imagemob.width >= 535 -%}{{ section.settings.collection_bg_imagemob | image_url: width: 535 }} 535w,{%- endif -%}
-              {%- if section.settings.collection_bg_imagemob.width >= 750 -%}{{ section.settings.collection_bg_imagemob | image_url: width: 750 }} 750w,{%- endif -%}
-              {%- if section.settings.collection_bg_imagemob.width >= 1070 -%}{{ section.settings.collection_bg_imagemob | image_url: width: 1070 }} 1070w,{%- endif -%}
-              {%- if section.settings.collection_bg_imagemob.width >= 1500 -%}{{ section.settings.collection_bg_imagemob | image_url: width: 1500 }} 1500w,{%- endif -%}
-              {{ section.settings.collection_bg_imagemob | image_url }} {{ section.settings.collection_bg_imagemob.width }}w
-            "
-            src="{{ section.settings.collection_bg_imagemob | image_url: width: 750 }}"
-            sizes="(min-width: {{ settings.page_width }}px) {{ settings.page_width | minus: 100 | divided_by: 2 }}px, (min-width: 750px) calc(50vw - 130px), calc(50vw - 55px)"
-            alt="{{ section.settings.collection_bg_imagemob.alt | escape }}"
-            width="{{ section.settings.collection_bg_imagemob.width }}"
-            height="{{ section.settings.collection_bg_imagemob.height }}"
-          >
-        </div>
-      {%- endif -%}
-    {%- endif -%}
   </div>
 </div>
 
@@ -116,11 +95,6 @@
       "type": "image_picker",
       "id": "collection_bg_image",
       "label": "Collection Background Image Desktop"
-    },
-    {
-      "type": "image_picker",
-      "id": "collection_bg_imagemob",
-      "label": "Collection Background Image Mobile"
     },
     {
       "type": "color_scheme",
