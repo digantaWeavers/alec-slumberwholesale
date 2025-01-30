@@ -16,10 +16,6 @@
           "type": "title",
           "settings": {}
         },
-        "price": {
-          "type": "price",
-          "settings": {}
-        },
         "description": {
           "type": "description",
           "settings": {}
@@ -60,7 +56,6 @@
       },
       "block_order": [
         "title",
-        "price",
         "description",
         "collapsible-row-1",
         "collapsible-row-0",
