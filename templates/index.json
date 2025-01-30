@@ -315,6 +315,18 @@
         "heading_color": "",
         "heading_gradient": ""
       }
+    },
+    "wholesale_partner_ckaRRj": {
+      "type": "wholesale-partner",
+      "settings": {
+        "upper_text": "SLEEP. LIVE. ENERGY. SLEEP.",
+        "main_heading": "<p>Become wholesale partner today</p>",
+        "button_text": "SIGN UP NOW",
+        "button_link": "shopify://collections/cbd-products",
+        "lower_text": "SLEEP. LIVE. ENERGY.",
+        "button_bg_color": "#f4f4f4",
+        "background_gradient": "radial-gradient(rgba(121, 128, 252, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)"
+      }
     }
   },
   "order": [
@@ -323,6 +335,7 @@
     "featured_collection_TAYXbJ",
     "collection_slider_MKDqTG",
     "happy_slumber_MAehWX",
-    "blog_list_trXmaq"
+    "blog_list_trXmaq",
+    "wholesale_partner_ckaRRj"
   ]
 }
