@@ -55,6 +55,14 @@
             "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>",
             "page": ""
           }
+        },
+        "seller_information_DFzNnm": {
+          "type": "Seller_information",
+          "settings": {
+            "heading": "support from the seller",
+            "seller_no": "+1 888 888 000",
+            "seller_email": "support@mail.com"
+          }
         }
       },
       "block_order": [
@@ -63,7 +71,8 @@
         "collapsible-row-1",
         "collapsible-row-0",
         "collapsible_tab_UpQLXt",
-        "collapsible-row-2"
+        "collapsible-row-2",
+        "seller_information_DFzNnm"
       ],
       "settings": {
         "enable_sticky_info": true,
