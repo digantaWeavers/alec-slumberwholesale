@@ -23,28 +23,37 @@
         "collapsible-row-1": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Product features",
+            "heading": "Product Description",
             "icon": "none",
-            "content": "",
-            "page": "product-features"
+            "content": "{{ product.metafields.custom.product_short_information | metafield_tag }}",
+            "page": ""
           }
         },
         "collapsible-row-0": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Materials and care",
+            "heading": "Ingredients",
             "icon": "none",
-            "content": "",
-            "page": "materials-and-care"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>",
+            "page": ""
+          }
+        },
+        "collapsible_tab_UpQLXt": {
+          "type": "collapsible_tab",
+          "settings": {
+            "heading": "What makes you sleepy?",
+            "icon": "none",
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>",
+            "page": ""
           }
         },
         "collapsible-row-2": {
           "type": "collapsible_tab",
           "settings": {
-            "heading": "Merchandising tips",
+            "heading": "Suggested Use",
             "icon": "none",
-            "content": "",
-            "page": "merchandising-tips"
+            "content": "<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut </p>",
+            "page": ""
           }
         }
       },
@@ -53,6 +62,7 @@
         "description",
         "collapsible-row-1",
         "collapsible-row-0",
+        "collapsible_tab_UpQLXt",
         "collapsible-row-2"
       ],
       "settings": {
