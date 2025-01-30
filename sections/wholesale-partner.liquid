@@ -1,60 +1,37 @@
-{%- render 'section-spacing-collap' -%}
-<div {% render 'section-properties' %}>
-  {%- capture section_content_uppertext -%}
-    {%- for i in (1..10) -%}
-        <span class="scrolling-text__text heading {% unless forloop.first %}motion-reduce:hidden{% endunless %}" {% unless forloop.first %}aria-hidden="true"{% endunless %}>
-            {%- render 'styled-text', content: section.settings.upper_text -%}
-        </span>
-    {%- endfor -%}
-  {%- endcapture -%}
-
-  {%- capture section_content_lowertext -%}
-    {%- for i in (1..10) -%}
-        <span class="scrolling-text__text heading {% unless forloop.first %}motion-reduce:hidden{% endunless %}" {% unless forloop.first %}aria-hidden="true"{% endunless %}>
-            {%- render 'styled-text', content: section.settings.lower_text -%}
-        </span>
-    {%- endfor -%}
-  {%- endcapture -%}
-
-  <div
-    class="body-inside-wrapper"
-    {% if section.settings.background_gradient != blank %}
-      {{ section.settings.background_gradient }}
-    {% endif %}
-  >
-    {%- if section.settings.upper_text != blank -%}
-      <div class="scrolling-text scrolling-text--auto">
-        <marquee-text scrolling-speed="{{ section.settings.scrolling_speed }}" class="scrolling-text__wrapper">
-          {{- section_content_uppertext -}}
-        </marquee-text>
-      </div>
-    {%- endif -%}
-
-    <div class="body-text-content-wrapper">
-      {%- if section.settings.main_heading != blank -%}
-        <h4>{{ section.settings.main_heading }}</h4>
-      {%- endif -%}
-      {%- if section.settings.button_text != blank -%}
-        <a
-          href="{{ section.settings.button_link }}"
-          class="btn"
-          {%- if section.settings.button_bg_color != ' blank' -%}
-            style="background-color: {{ section.settings.button_bg_color }};"
-          {%- endif -%}
-        >
-          {{- section.settings.button_text -}}
-        </a>
-      {%- endif -%}
+<div
+  class="body-inside-wrapper page-width"
+  {% if section.settings.background_gradient != blank %}
+    style="background: {{ section.settings.background_gradient }};"
+  {% endif %}
+>
+  {%- if section.settings.upper_text != blank -%}
+    <div class="scrolling-text scrolling-text--auto">
+      <span class="text-main-wrapp">{{ section.settings.upper_text }}</span>
     </div>
+  {%- endif -%}
 
-    {%- if section.settings.lower_text != blank -%}
-      <div class="scrolling-text scrolling-text--auto">
-        <marquee-text scrolling-speed="{{ section.settings.scrolling_speed }}" class="scrolling-text__wrapper">
-          {{- section_content_lowertext -}}
-        </marquee-text>
-      </div>
+  <div class="body-text-content-wrapper">
+    {%- if section.settings.main_heading != blank -%}
+      <h4>{{ section.settings.main_heading }}</h4>
+    {%- endif -%}
+    {%- if section.settings.button_text != blank -%}
+      <a
+        href="{{ section.settings.button_link }}"
+        class="btn"
+        {%- if section.settings.button_bg_color != ' blank' -%}
+          style="background-color: {{ section.settings.button_bg_color }};"
+        {%- endif -%}
+      >
+        {{- section.settings.button_text -}}
+      </a>
     {%- endif -%}
   </div>
+
+  {%- if section.settings.lower_text != blank -%}
+    <div class="scrolling-text scrolling-text--auto">
+      <span class="text-main-wrapp">{{ section.settings.lower_text }}</span>
+    </div>
+  {%- endif -%}
 </div>
 {% schema %}
 {
