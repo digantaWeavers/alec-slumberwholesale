@@ -23,25 +23,41 @@
         "link_list": {
           "type": "link_list",
           "settings": {
-            "heading": "Quick links",
+            "heading": "Resources",
+            "menu": "footer"
+          }
+        },
+        "link_list_QQEPYX": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Products",
+            "menu": "footer"
+          }
+        },
+        "link_list_mpjxKA": {
+          "type": "link_list",
+          "settings": {
+            "heading": "Support",
             "menu": "footer"
           }
         }
       },
       "block_order": [
         "brand_information_UKxPzC",
-        "link_list"
+        "link_list",
+        "link_list_QQEPYX",
+        "link_list_mpjxKA"
       ],
       "settings": {
         "color_scheme": "scheme-4",
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
-        "enable_follow_on_shop": true,
+        "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": true,
         "enable_language_selector": true,
-        "payment_enable": true,
-        "show_policy": true,
+        "payment_enable": false,
+        "show_policy": false,
         "margin_top": 0,
         "padding_top": 36,
         "padding_bottom": 36
