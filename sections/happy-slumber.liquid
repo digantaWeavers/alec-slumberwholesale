@@ -1,0 +1,127 @@
+<div class="happy-slumber-inner" style="background-color: {{ section.settings.background_color }};">
+  <div class="container">
+    <div class="top-content">
+      <h2 style="color: {{ section.settings.text_color }}">{{ section.settings.main_heading }}</h2>
+      <p style="color: {{ section.settings.text_color }}">
+        {{ section.settings.desc }}
+      </p>
+    </div>
+  </div>
+
+  <div class="slick marquee">
+    {%- for block in section.blocks -%}
+      {%- case block.type -%}
+        {%- when 'upper_testimonial' -%}
+          <div class="slick-slide">
+            <div class="inner">
+              <div class="test-slider-inner">
+                <div class="testi-slider-top">
+                  {%- if block.settings.show_rating -%}
+                    <div class="rating">
+                      <div
+                        class="rating__stars"
+                        role="img"
+                      >
+                        {%- for i in (1..5) -%}
+                          {%- if i <= block.settings.rating -%}
+                            {%- render 'icon' with 'rating-star', class: 'rating__star' -%}
+                          {%- else -%}
+                            {%- render 'icon' with 'rating-star', class: 'rating__star rating__star--empty' -%}
+                          {%- endif -%}
+                        {%- endfor -%}
+                      </div>
+                    </div>
+                  {%- endif -%}
+                  {%- if block.settings.customer_review != blank -%}
+                    <p>{{ block.settings.customer_review }}</p>
+                  {%- endif -%}
+                  <div class="user-info">
+                    {%- if block.settings.customer_name != blank -%}
+                      <p>
+                        <span>{{ block.settings.customer_name }}</span>
+                      </p>
+                    {%- endif -%}
+                    {%- if block.settings.customer_pos != blank -%}
+                      <p>{{ block.settings.customer_pos }}</p>
+                    {%- endif -%}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      {%- endcase -%}
+    {%- endfor -%}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Happy Slumber",
+  "tag": "section",
+  "class": "happy-slumber",
+  "settings": [
+    {
+      "type": "text",
+      "id": "main_heading",
+      "label": "Heading"
+    },
+    {
+      "type": "textarea",
+      "id": "desc",
+      "label": "Description"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text Color"
+    }
+  ],
+  "blocks": [
+    {
+      "type": "upper_testimonial",
+      "name": "Upper Testimonial",
+      "settings": [
+        {
+          "type": "text",
+          "id": "customer_name",
+          "label": "Customer Name"
+        },
+        {
+          "type": "text",
+          "id": "customer_pos",
+          "label": "Customer Position"
+        },
+        {
+          "type": "inline_richtext",
+          "id": "customer_review",
+          "label": "Customer Review Content"
+        },
+        {
+          "type": "checkbox",
+          "id": "show_rating",
+          "label": "Show Customer rating",
+          "default": true
+        },
+        {
+          "type": "range",
+          "min": 0,
+          "max": 5,
+          "id": "rating",
+          "label": "Rating",
+          "default": 4
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Happy Slumber"
+    }
+  ]
+}
+{% endschema %}
