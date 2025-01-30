@@ -11,8 +11,41 @@
   "sections": {
     "image_banner": {
       "type": "image-banner",
+      "blocks": {
+        "text_w4GqqR": {
+          "type": "text",
+          "settings": {
+            "text": "WHOLESALE SHOP",
+            "text_style": "subtitle"
+          }
+        },
+        "heading_hKkB9Q": {
+          "type": "heading",
+          "settings": {
+            "heading": "Market-leading products for wellness.",
+            "heading_size": "h1"
+          }
+        },
+        "buttons_4G9XFQ": {
+          "type": "buttons",
+          "settings": {
+            "button_label_1": "SHOP TOP SELLERS",
+            "button_link_1": "shopify://collections/all",
+            "button_style_secondary_1": false,
+            "button_label_2": "BECOME A WHOLESALER",
+            "button_link_2": "shopify://collections/full-spectrum",
+            "button_style_secondary_2": true
+          }
+        }
+      },
+      "block_order": [
+        "text_w4GqqR",
+        "heading_hKkB9Q",
+        "buttons_4G9XFQ"
+      ],
       "settings": {
         "image": "shopify://shop_images/home-banner.png",
+        "image_2": "shopify://shop_images/mobilebanner.png",
         "image_overlay_opacity": 40,
         "image_height": "small",
         "desktop_content_position": "middle-left",
