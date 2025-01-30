@@ -1,11 +1,10 @@
 <div class="happy-slumber-inner" style="background-color: {{ section.settings.background_color }};">
   <div class="container">
-    <div class="top-content">
-      <h2 style="color: {{ section.settings.text_color }}">{{ section.settings.main_heading }}</h2>
-      <p style="color: {{ section.settings.text_color }}">
-        {{ section.settings.desc }}
-      </p>
-    </div>
+    {%- if section.settings.main_heading != blank -%}
+      <div class="top-content">
+        <h2 style="color: {{ section.settings.text_color }}">{{ section.settings.main_heading }}</h2>
+      </div>
+    {%- endif -%}
   </div>
 
   <div class="slick marquee">
@@ -32,17 +31,22 @@
                       </div>
                     </div>
                   {%- endif -%}
+                  {%- if block.settings.review_heading != blank -%}
+                    <h4 style="color: {{ section.settings.text_color }}">
+                      {{ block.settings.review_heading | remove: '<p>' | remove: '</p>' }}
+                    </h4>
+                  {%- endif -%}
                   {%- if block.settings.customer_review != blank -%}
-                    <p>{{ block.settings.customer_review }}</p>
+                    <p style="color: {{ section.settings.text_color }}">{{ block.settings.customer_review }}</p>
                   {%- endif -%}
                   <div class="user-info">
                     {%- if block.settings.customer_name != blank -%}
-                      <p>
+                      <p style="color: {{ section.settings.text_color }}">
                         <span>{{ block.settings.customer_name }}</span>
                       </p>
                     {%- endif -%}
-                    {%- if block.settings.customer_pos != blank -%}
-                      <p>{{ block.settings.customer_pos }}</p>
+                    {%- if block.settings.show_verified != blank -%}
+                      <p style="color: {{ section.settings.text_color }}">Verified Customer</p>
                     {%- endif -%}
                   </div>
                 </div>
@@ -52,6 +56,14 @@
       {%- endcase -%}
     {%- endfor -%}
   </div>
+
+  {%- if section.settings.desc != blank -%}
+    <div class="desecriptionwrapp">
+      <p style="color: {{ section.settings.text_color }}">
+        {{ section.settings.desc }}
+      </p>
+    </div>
+  {%- endif -%}
 </div>
 
 {% schema %}
@@ -92,9 +104,15 @@
           "label": "Customer Name"
         },
         {
-          "type": "text",
-          "id": "customer_pos",
-          "label": "Customer Position"
+          "type": "checkbox",
+          "id": "show_verified",
+          "label": "Verified Customer",
+          "default": true
+        },
+        {
+          "type": "richtext",
+          "id": "review_heading",
+          "label": "Review Heading"
         },
         {
           "type": "inline_richtext",
