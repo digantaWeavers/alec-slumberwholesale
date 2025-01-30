@@ -205,13 +205,25 @@
                   <div class="seller-ot-info">
                     {%- if block.settings.seller_no != blank -%}
                       <div class="caller-info">
-                        <span><img src="{% render 'phone.svg' %}" alt="call icon"> Call</span>
+                        <span
+                          ><img
+                            src="https://cdn.shopify.com/s/files/1/0742/8554/7738/files/phone.svg?v=1738236873"
+                            alt="call icon"
+                          >
+                          Call</span
+                        >
                         <a href="tel:{{ block.settings.seller_no }}">{{ block.settings.seller_no }}</a>
                       </div>
                     {%- endif -%}
                     {%- if block.settings.seller_email != blank -%}
                       <div class="caller-info">
-                        <span><img src="{% render 'email.svg' %}" alt="call icon"> Email</span>
+                        <span
+                          ><img
+                            src="https://cdn.shopify.com/s/files/1/0742/8554/7738/files/email.svg?v=1738236873"
+                            alt="call icon"
+                          >
+                          Email</span
+                        >
                         <a href="mailto:{{ block.settings.seller_email }}">{{ block.settings.seller_email }}</a>
                       </div>
                     {%- endif -%}
