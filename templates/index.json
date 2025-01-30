@@ -209,6 +209,74 @@
         "heading_gradient": ""
       }
     },
+    "happy_slumber_MAehWX": {
+      "type": "happy-slumber",
+      "blocks": {
+        "upper_testimonial_APaRm3": {
+          "type": "upper_testimonial",
+          "settings": {
+            "customer_name": "Sarah H.",
+            "customer_pos": "",
+            "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "upper_testimonial_UxYtf6": {
+          "type": "upper_testimonial",
+          "settings": {
+            "customer_name": "Sarah H.",
+            "customer_pos": "",
+            "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "upper_testimonial_Br84QJ": {
+          "type": "upper_testimonial",
+          "settings": {
+            "customer_name": "Sarah H.",
+            "customer_pos": "",
+            "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "upper_testimonial_RFyeBT": {
+          "type": "upper_testimonial",
+          "settings": {
+            "customer_name": "Sarah H.",
+            "customer_pos": "",
+            "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
+            "show_rating": false,
+            "rating": 4
+          }
+        },
+        "upper_testimonial_Hcg6yY": {
+          "type": "upper_testimonial",
+          "settings": {
+            "customer_name": "Sarah H.",
+            "customer_pos": "",
+            "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
+            "show_rating": false,
+            "rating": 4
+          }
+        }
+      },
+      "block_order": [
+        "upper_testimonial_APaRm3",
+        "upper_testimonial_UxYtf6",
+        "upper_testimonial_Br84QJ",
+        "upper_testimonial_RFyeBT",
+        "upper_testimonial_Hcg6yY"
+      ],
+      "settings": {
+        "main_heading": "Happy Slumbers",
+        "desc": "The information is not a substitute for expert medical care. These observations are not guaranteed, are not medically substantiated, and may not be typical for other customers.",
+        "background_color": "#293063",
+        "text_color": "#f4f4f4"
+      }
+    },
     "multicolumn1": {
       "type": "multicolumn",
       "blocks": {
@@ -369,6 +437,7 @@
     "home_multicolumn_4pw64J",
     "featured_collection_TAYXbJ",
     "collection_slider_MKDqTG",
+    "happy_slumber_MAehWX",
     "multicolumn1",
     "featured_collection2",
     "multicolumn2"
