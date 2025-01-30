@@ -247,9 +247,21 @@
           {%- endif -%}
         </div>
 
-        {%- if section.settings.footer_cont != blank -%}
-          <p>{{ section.settings.footer_cont | remove: '<p>' | remove: '</p>' }}</p>
-        {%- endif -%}
+        <div class="footer_outer_text">
+          {%- if section.settings.disclosure_text != blank -%}
+            <p>
+              <strong>{{ section.settings.disclosure_text }}</strong>
+            </p>
+          {%- endif -%}
+          {%- if section.settings.disclosure_sub_head != blank -%}
+            <p>
+              <span>{{ section.settings.disclosure_sub_head }}</span>
+            </p>
+          {%- endif -%}
+          {%- if section.settings.dic_content != blank -%}
+            {{ section.settings.dic_content }}
+          {%- endif -%}
+        </div>
       </div>
     {%- endunless -%}
   {%- endif -%}
@@ -445,9 +457,23 @@
       "default": "scheme-1"
     },
     {
-      "type": "checkbox",
-      "id": "show_copirightcont",
-      "label": "Show Copyright Text"
+      "type": "header",
+      "content": "Discramer"
+    },
+    {
+      "type": "text",
+      "id": "disclosure_text",
+      "label": "Disclouser Heading"
+    },
+    {
+      "type": "text",
+      "id": "disclosure_sub_head",
+      "label": "Disclouser Sub-Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "dic_content",
+      "label": "Disclosure Content"
     },
     {
       "type": "header",
