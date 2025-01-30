@@ -216,7 +216,8 @@
           "type": "upper_testimonial",
           "settings": {
             "customer_name": "Sarah H.",
-            "customer_pos": "sdcsd",
+            "show_verified": true,
+            "review_heading": "<p>A Dream Come True. </p>",
             "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
             "show_rating": false,
             "rating": 4
@@ -226,7 +227,8 @@
           "type": "upper_testimonial",
           "settings": {
             "customer_name": "Sarah H.",
-            "customer_pos": "",
+            "show_verified": true,
+            "review_heading": "<p>A Dream Come True. </p>",
             "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
             "show_rating": false,
             "rating": 4
@@ -236,7 +238,8 @@
           "type": "upper_testimonial",
           "settings": {
             "customer_name": "Sarah H.",
-            "customer_pos": "",
+            "show_verified": true,
+            "review_heading": "<p>A Dream Come True. </p>",
             "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
             "show_rating": false,
             "rating": 4
@@ -246,7 +249,8 @@
           "type": "upper_testimonial",
           "settings": {
             "customer_name": "Sarah H.",
-            "customer_pos": "",
+            "show_verified": true,
+            "review_heading": "<p>A Dream Come True. </p>",
             "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
             "show_rating": false,
             "rating": 4
@@ -256,7 +260,8 @@
           "type": "upper_testimonial",
           "settings": {
             "customer_name": "Sarah H.",
-            "customer_pos": "",
+            "show_verified": true,
+            "review_heading": "<p>A Dream Come True. </p>",
             "customer_review": "I have suffered from insomnia for years and thought I would never get a good night's sleep again. After trying Slumber, I can finally fall asleep quickly and stay asleep through the night. I wake up feeling refreshed and ready to take on the day. It's an absolute dream come true!",
             "show_rating": false,
             "rating": 4
