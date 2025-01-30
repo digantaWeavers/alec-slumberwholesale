@@ -50,8 +50,10 @@
       ],
       "settings": {
         "color_scheme": "scheme-2",
+        "show_copirightcont": false,
         "newsletter_enable": false,
         "newsletter_heading": "Subscribe to our emails",
+        "footer_cont": "<p>Disclosure</p><p>All products contain less than 0.3% THC.*These statements have not been evaluated by the Food and Drug Administration. This product is not intended to diagnose, treat, cure, or prevent any disease.**Testimonials on this website are for informational purposes only. The information is not a substitute for expert medical or veterinary care. Testimonials are written by actual customers and represent their own observations. These observations are not guaranteed, are not medically substantiated, and may not be typical for other customers or pets.</p>",
         "enable_follow_on_shop": false,
         "show_social": false,
         "enable_country_selector": false,
