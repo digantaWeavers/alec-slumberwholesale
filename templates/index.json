@@ -281,6 +281,40 @@
         "background_color": "#293063",
         "text_color": "#f4f4f4"
       }
+    },
+    "blog_list_trXmaq": {
+      "type": "blog-list",
+      "blocks": {
+        "blog_xz8hX7": {
+          "type": "blog",
+          "settings": {
+            "blog": "news",
+            "posts_count": 3,
+            "stack_items": true
+          }
+        }
+      },
+      "block_order": [
+        "blog_xz8hX7"
+      ],
+      "settings": {
+        "full_width": true,
+        "show_excerpt": false,
+        "show_date": false,
+        "show_author": false,
+        "show_comments_count": false,
+        "show_category": true,
+        "subheading": "",
+        "title": "Educational Resources",
+        "content": "",
+        "link_url": "",
+        "link_text": "Explore",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
     }
   },
   "order": [
@@ -288,6 +322,7 @@
     "home_multicolumn_4pw64J",
     "featured_collection_TAYXbJ",
     "collection_slider_MKDqTG",
-    "happy_slumber_MAehWX"
+    "happy_slumber_MAehWX",
+    "blog_list_trXmaq"
   ]
 }
