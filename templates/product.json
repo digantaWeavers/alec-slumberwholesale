@@ -150,10 +150,10 @@
       ],
       "settings": {
         "heading": "Real results by real people",
-        "desc": "<p>Nam nisl consequat quis ullamcorper viverra eros integer sit. Suspendisse rutrum in velit lacus quam dictumst. Learn More Here.</p>",
+        "desc": "<p>Nam nisl consequat quis ullamcorper viverra eros integer sit. Suspendisse rutrum in velit lacus quam dictumst. <a href=\"#\" target=\"_blank\" title=\"#\">Learn More Here.</a></p>",
         "bgcolor": "#0e1336",
         "txtcolor": "#f4f4f4",
-        "linktext_color": ""
+        "linktext_color": "#86ccd8"
       }
     },
     "related-products": {
