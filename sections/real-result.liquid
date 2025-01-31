@@ -1,13 +1,17 @@
-{%- stylesheet -%}
-  {%- if section.settings.bgcolor != blank or section.settings.txtcolor != blank -%}
+<style>
   .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }}{
       background-color: {{ section.settings.bgcolor }};
   }
-  .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} p{
+  .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} h2, .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} p{
       color: {{ section.settings.txtcolor }};
   }
+
+  {%- if section.settings.linktext_color != blank -%}
+    .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} p a{
+        color: {{ section.settings.linktext_color }};
+    }
   {%- endif -%}
-{%- endstylesheet -%}
+</style>
 <div class="section-inn-wrapp sec_{{ section.id }}">
   <div class="page-width">
     {%- unless section.settings.heading == blank or section.settings.desc == blank -%}
