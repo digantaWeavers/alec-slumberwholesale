@@ -100,6 +100,18 @@
         "padding_bottom": 16
       }
     },
+    "wholesale_partner_7BNBWV": {
+      "type": "wholesale-partner",
+      "settings": {
+        "upper_text": "",
+        "main_heading": "<p>Mix & Match your own bundle</p>",
+        "button_text": "Create your bundle",
+        "button_link": "#",
+        "lower_text": "SLEEP. LIVE. ENERGY.",
+        "button_bg_color": "#f4f4f4",
+        "background_gradient": "radial-gradient(rgba(121, 128, 252, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)"
+      }
+    },
     "related-products": {
       "type": "related-products",
       "settings": {
@@ -122,6 +134,7 @@
   "order": [
     "main",
     "quick-order-list",
+    "wholesale_partner_7BNBWV",
     "related-products"
   ]
 }
