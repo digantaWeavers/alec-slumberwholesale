@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -8,20 +17,69 @@
         "padding_bottom": 36
       }
     },
-    "image_banner": {
-      "type": "image-banner",
+    "wholesale_info_HkazHW": {
+      "type": "wholesale-info",
+      "blocks": {
+        "information_YcgJkg": {
+          "type": "Information",
+          "settings": {
+            "info_image": "shopify://shop_images/success.svg",
+            "info_msg": "Dedicated success managers",
+            "info_url": "#",
+            "text_color": "#f4f4f4",
+            "info_bg_color": "linear-gradient(0deg, rgba(196, 170, 237, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+          }
+        },
+        "information_Aday34": {
+          "type": "Information",
+          "settings": {
+            "info_image": "shopify://shop_images/co-branding.svg",
+            "info_msg": "Co-branding opportunities",
+            "info_url": "#",
+            "text_color": "#f4f4f4",
+            "info_bg_color": "radial-gradient(rgba(118, 129, 206, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+          }
+        },
+        "information_QDR888": {
+          "type": "Information",
+          "settings": {
+            "info_image": "shopify://shop_images/affiliated.svg",
+            "info_msg": "Affiliate link opportunities",
+            "info_url": "#",
+            "text_color": "#f4f4f4",
+            "info_bg_color": "radial-gradient(rgba(215, 166, 129, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+          }
+        },
+        "information_Be9mj4": {
+          "type": "Information",
+          "settings": {
+            "info_image": "shopify://shop_images/grow.svg",
+            "info_msg": "Up to 60% savings on retail prices",
+            "info_url": "#",
+            "text_color": "#f4f4f4",
+            "info_bg_color": "radial-gradient(rgba(80, 196, 169, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+          }
+        },
+        "information_Jw7iMh": {
+          "type": "Information",
+          "settings": {
+            "info_image": "shopify://shop_images/exclusive-prod.svg",
+            "info_msg": "Exclusive product access",
+            "info_url": "",
+            "text_color": "#f4f4f4",
+            "info_bg_color": "radial-gradient(rgba(225, 184, 185, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+          }
+        }
+      },
+      "block_order": [
+        "information_YcgJkg",
+        "information_Aday34",
+        "information_QDR888",
+        "information_Be9mj4",
+        "information_Jw7iMh"
+      ],
       "settings": {
-        "image": "shopify://shop_images/Image_banner_2x_8.png",
-        "image_overlay_opacity": 20,
-        "image_height": "adapt",
-        "desktop_content_position": "middle-left",
-        "show_text_box": false,
-        "desktop_content_alignment": "left",
-        "color_scheme": "",
-        "image_behavior": "none",
-        "mobile_content_alignment": "center",
-        "stack_images_on_mobile": true,
-        "show_text_below": true
+        "mainheading": "Become wholesale partner today."
       }
     },
     "form": {
@@ -37,7 +95,7 @@
   },
   "order": [
     "main",
-    "image_banner",
+    "wholesale_info_HkazHW",
     "form"
   ]
 }
