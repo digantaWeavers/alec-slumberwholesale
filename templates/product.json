@@ -123,10 +123,30 @@
             "percentag_color": "#86ccd8",
             "percentag_text_color": "#f4f4f4"
           }
+        },
+        "real_percentage_QHbiMb": {
+          "type": "real_percentage",
+          "settings": {
+            "percentage": "82%",
+            "percentagetext": "<p>Helped them sleeper better</p>",
+            "percentag_color": "#86ccd8",
+            "percentag_text_color": "#f4f4f4"
+          }
+        },
+        "real_percentage_WiFiW3": {
+          "type": "real_percentage",
+          "settings": {
+            "percentage": "82%",
+            "percentagetext": "<p>Helped them sleeper better</p>",
+            "percentag_color": "#86ccd8",
+            "percentag_text_color": "#f4f4f4"
+          }
         }
       },
       "block_order": [
-        "real_percentage_TnHraY"
+        "real_percentage_TnHraY",
+        "real_percentage_QHbiMb",
+        "real_percentage_WiFiW3"
       ],
       "settings": {
         "heading": "Real results by real people",
