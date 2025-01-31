@@ -12,45 +12,45 @@
   <div class="page-width">
     {%- unless section.settings.heading == blank or section.settings.desc == blank -%}
       <div class="title-wrapp">
-        {%- unless section.settings.heading != blank -%}
+        {%- unless section.settings.heading == blank -%}
           <h2>{{ section.settings.heading }}</h2>
         {%- endunless -%}
-        {%- unless section.settings.desc != blank -%}
+        {%- unless section.settings.desc == blank -%}
           <p>{{ section.settings.desc | remove: '<p>' | remove: '</p>' }}</p>
         {%- endunless -%}
       </div>
     {%- endunless -%}
-    {%- if section.settings.block.size > 0 -%}
-      <ul class="percentage-wrapp">
-        {%- for block in section.blocks -%}
-          <li class="block_{{ block.id }}">
-            {%- if block.settings.percentag_color != blank or block.settings.percentag_text_color != blank -%}
-              <style>
-                .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} h2{
-                    color: {{ block.settings.percentag_color }};
-                }
-                {%- if block.settings.percentag_text_color == blank -%}
-                    .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} p{
-                        color: {{ section.settings.txtcolor }};
-                    }
-                {%- else -%}
-                    .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} p{
-                        color: {{ block.settings.percentag_text_color }};
-                    }
-                {%- endif -%}
-              </style>
-            {%- endif -%}
-            {%- if block.settings.percentage != blank -%}
-              <h2>{{ block.settings.percentage }}</h2>
-            {%- endif -%}
-            {%- if block.settings.percentagetext != blank -%}
-              <p>{{ block.settings.percentagetext | remove: '<p>' | remove: '</p>' }}</p>
-            {%- endif -%}
-          </li>
-        {%- endfor -%}
-      </ul>
-    {%- endif -%}
-    <ul></ul>
+    {% comment %} {%- if section.settings.block.size > 0 -%} {% endcomment %}
+    <ul class="percentage-wrapp">
+      {%- for block in section.blocks -%}
+        <li class="block_{{ block.id }}">
+          {%- if block.settings.percentag_color != blank or block.settings.percentag_text_color != blank -%}
+            <style>
+              .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} h2{
+                  color: {{ block.settings.percentag_color }};
+              }
+              {%- if block.settings.percentag_text_color == blank -%}
+                  .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} p{
+                      color: {{ section.settings.txtcolor }};
+                  }
+              {%- else -%}
+                  .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} p{
+                      color: {{ block.settings.percentag_text_color }};
+                  }
+              {%- endif -%}
+            </style>
+          {%- endif -%}
+          {%- if block.settings.percentage != blank -%}
+            <h2>{{ block.settings.percentage }}</h2>
+          {%- endif -%}
+          {%- if block.settings.percentagetext != blank -%}
+            <p>{{ block.settings.percentagetext | remove: '<p>' | remove: '</p>' }}</p>
+          {%- endif -%}
+        </li>
+      {%- endfor -%}
+    </ul>
+    {% comment %} {%- endif -%} {% endcomment %}
+    {% comment %} <ul></ul> {% endcomment %}
   </div>
 </div>
 {% schema %}
