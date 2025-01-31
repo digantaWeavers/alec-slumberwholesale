@@ -1,0 +1,143 @@
+{%- liquid
+  assign full_width = '100vw'
+  assign widths = '375, 550, 750, 1100, 1500, 1780, 2000, 3000, 3840'
+  assign half_width = '60vw'
+  assign full_width = '120vw'
+  assign stacked_sizes = '(min-width: 750px) 60vw, 120vw'
+  assign widths = '450, 660, 900, 1320, 1800, 2136, 2400, 3600, 7680'
+  assign fetch_priority = 'auto'
+  if section.index == 1
+    assign fetch_priority = 'high'
+  endif
+-%}
+<div class="wholesale-info-inner sec_{{ section.id }}">
+  <div class="page-width">
+    {%- unless section.settings.mainheading == blank -%}
+      <div class="title-wrapp">
+        <h2>{{ section.settings.mainheading }}</h2>
+      </div>
+    {%- endunless -%}
+    {%- if section.blocks.size > 0 -%}
+      <ul class="infor-out-wrapp">
+        {%- for block in section.blocks -%}
+          <li id="block_{{ block.id }}">
+            <style>
+              .wholesale-info-wrapp .wholesale-info-inner.sec_{{ section.id }} .infor-out-wrapp #block_{{ block.id }}{
+                  background: {{ block.settings.info_bg_color }};
+              }
+            </style>
+            {%- if block.settings.info_url != blank -%}
+              <a href="{{ block.settings.info_url }}" class="info-wrapp">
+            {%- else -%}
+              <div class="info-wrapp">
+            {%- endif -%}
+
+            {%- if block.settings.info_image != blank -%}
+              <div class="infor-img-wrapp">
+                {%- liquid
+                  assign image_height = block.settings.info_image.width | divided_by: block.settings.info_image.aspect_ratio
+                  if block.settings.info_image_2 != blank
+                    assign image_class = 'banner__media-image-half'
+                  endif
+                  if block.settings.info_image_2 != blank and section.settings.stack_images_on_mobile
+                    assign sizes = stacked_sizes
+                  elsif block.settings.info_image_2 != blank
+                    assign sizes = half_width
+                  else
+                    assign sizes = full_width
+                  endif
+                -%}
+                {{
+                  block.settings.info_image
+                  | image_url: width: 3840
+                  | image_tag:
+                    width: block.settings.info_image.width,
+                    height: image_height,
+                    class: image_class,
+                    sizes: sizes,
+                    widths: widths,
+                    fetchpriority: fetch_priority
+                }}
+              </div>
+            {%- endif -%}
+
+            {%- if block.settings.info_msg != blank -%}
+              <h3
+                style="
+                  {%- if block.settings.text_color != blank -%}
+                      color: {{ block.settings.text_color }};
+                  {%- endif -%}
+                "
+              >
+                {{ block.settings.info_msg }}
+              </h3>
+            {%- endif -%}
+
+            {%- if block.settings.info_url != blank -%}
+              </a>
+            {%- else -%}
+              </div>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Wholesale Information",
+  "tag": "section",
+  "class": "wholesale-info-wrapp",
+  "settings": [
+    {
+      "type": "text",
+      "id": "mainheading",
+      "label": "Main Heading"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Information",
+      "type": "Information",
+      "settings": [
+        {
+          "type": "image_picker",
+          "id": "info_image",
+          "label": "Information Icon"
+        },
+        {
+          "type": "text",
+          "id": "info_msg",
+          "label": "Information Message"
+        },
+        {
+          "type": "url",
+          "id": "info_url",
+          "label": "Information Link"
+        },
+        {
+          "type": "header",
+          "content": "Color Schema"
+        },
+        {
+          "type": "color",
+          "id": "text_color",
+          "label": "Information Text Color"
+        },
+        {
+          "type": "color_background",
+          "id": "info_bg_color",
+          "label": "Information Background Color",
+          "default": "linear-gradient(#ffffff, #000000)"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Wholesale Information"
+    }
+  ]
+}
+{% endschema %}
