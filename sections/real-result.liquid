@@ -1,0 +1,130 @@
+{%- stylesheet -%}
+  {%- if section.settings.bgcolor != blank or section.settings.txtcolor != blank -%}
+  .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }}{
+      background-color: {{ section.settings.bgcolor }};
+  }
+  .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} p{
+      color: {{ section.settings.txtcolor }};
+  }
+  {%- endif -%}
+{%- endstylesheet -%}
+<div class="section-inn-wrapp sec_{{ section.id }}">
+  <div class="page-width">
+    {%- unless section.settings.heading == blank or section.settings.desc == blank -%}
+      <div class="title-wrapp">
+        {%- unless section.settings.heading != blank -%}
+          <h2>{{ section.settings.heading }}</h2>
+        {%- endunless -%}
+        {%- unless section.settings.desc != blank -%}
+          <p>{{ section.settings.desc | remove: '<p>' | remove: '</p>' }}</p>
+        {%- endunless -%}
+      </div>
+    {%- endunless -%}
+    {%- if section.settings.block.size > 0 -%}
+      <ul class="percentage-wrapp">
+        {%- for block in section.blocks -%}
+          <li class="block_{{ block.id }}">
+            {%- if block.settings.percentag_color != blank or block.settings.percentag_text_color != blank -%}
+              <style>
+                .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} h2{
+                    color: {{ block.settings.percentag_color }};
+                }
+                {%- if block.settings.percentag_text_color == blank -%}
+                    .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} p{
+                        color: {{ section.settings.txtcolor }};
+                    }
+                {%- else -%}
+                    .real-result-wrapper .section-inn-wrapp.sec_{{ section.id }} .percentage-wrapp .block_{{ block.id }} p{
+                        color: {{ block.settings.percentag_text_color }};
+                    }
+                {%- endif -%}
+              </style>
+            {%- endif -%}
+            {%- if block.settings.percentage != blank -%}
+              <h2>{{ block.settings.percentage }}</h2>
+            {%- endif -%}
+            {%- if block.settings.percentagetext != blank -%}
+              <p>{{ block.settings.percentagetext | remove: '<p>' | remove: '</p>' }}</p>
+            {%- endif -%}
+          </li>
+        {%- endfor -%}
+      </ul>
+    {%- endif -%}
+    <ul></ul>
+  </div>
+</div>
+{% schema %}
+{
+  "name": "Real Result",
+  "tag": "section",
+  "class": "real-result-wrapper",
+  "settings": [
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Main Heading"
+    },
+    {
+      "type": "richtext",
+      "id": "desc",
+      "label": "Content"
+    },
+    {
+      "type": "header",
+      "content": "Color Schema"
+    },
+    {
+      "type": "color",
+      "id": "bgcolor",
+      "label": "Background Color"
+    },
+    {
+      "type": "color",
+      "id": "txtcolor",
+      "label": "Text Color"
+    },
+    {
+      "type": "color",
+      "id": "linktext_color",
+      "label": "Link Text Color"
+    }
+  ],
+  "blocks": [
+    {
+      "name": "Real Percentage",
+      "type": "real_percentage",
+      "settings": [
+        {
+          "type": "text",
+          "id": "percentage",
+          "label": "Percentage"
+        },
+        {
+          "type": "richtext",
+          "id": "percentagetext",
+          "label": "Percentage Text"
+        },
+        {
+          "type": "header",
+          "content": "Color Schema"
+        },
+        {
+          "type": "color",
+          "id": "percentag_color",
+          "label": "Percentage Color"
+        },
+        {
+          "type": "color",
+          "id": "percentag_text_color",
+          "label": "Percentage Text Color"
+        }
+      ]
+    }
+  ],
+  "presets": [
+    {
+      "name": "Real Result"
+    }
+  ]
+}
+{% endschema %}
