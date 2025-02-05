@@ -37,7 +37,7 @@
 {%- endcomment -%}
 
 <div {% render 'section-properties' %}>
-  <div class="section-stack">
+  <div class="section-stack page-width">
     <div class="title-button-wrapp title-wrapper">
       {%- assign link_url = section.settings.link_url | default: section.settings.collection.url -%}
       {%- render 'section-header',
