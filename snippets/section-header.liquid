@@ -54,7 +54,7 @@
     {%- endif -%}
 
     {%- if link_text != blank -%}
-      <a href="{{ link_url }}" class="text-with-icon group">
+      <a href="{{ link_url }}" class="text-with-icon group button">
         <span class="reversed-link">{{- link_text | escape -}}</span>
         <span class="circle-chevron group-hover:colors">
           {%- render 'icon' with 'chevron-right-small', direction_aware: true -%}
