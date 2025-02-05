@@ -119,7 +119,7 @@
                       </p>
 
                       {%- if block.settings.subheading != blank -%}
-                        <p>{{ block.settings.subheading | escape }}</p>
+                        <p style="color: {{ block.settings.text_color }}">{{ block.settings.subheading | escape }}</p>
                       {%- endif -%}
                     </div>
 
