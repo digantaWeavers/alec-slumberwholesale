@@ -227,7 +227,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "box_color": "#8a92bd"
+            "box_color": "#e79355"
           }
         },
         "collection_YieQVJ": {
@@ -239,7 +239,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "box_color": "#8a92bd"
+            "box_color": "#347163"
           }
         },
         "collection_YGdn3p": {
@@ -251,43 +251,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "box_color": "#8a92bd"
-          }
-        },
-        "collection_pJ6V3V": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "box_color": ""
-          }
-        },
-        "collection_8dTgcX": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "box_color": ""
-          }
-        },
-        "collection_4WE83R": {
-          "type": "collection",
-          "settings": {
-            "collection": "",
-            "subheading": "",
-            "title": "",
-            "heading_tag": "h2",
-            "text_position": "place-self-center text-center",
-            "text_color": "#ffffff",
-            "box_color": ""
+            "box_color": "#d8cf8b"
           }
         }
       },
@@ -295,10 +259,7 @@
         "collection_XrVpVh",
         "collection_3jALw8",
         "collection_YieQVJ",
-        "collection_YGdn3p",
-        "collection_pJ6V3V",
-        "collection_8dTgcX",
-        "collection_4WE83R"
+        "collection_YGdn3p"
       ],
       "settings": {
         "full_width": true,
