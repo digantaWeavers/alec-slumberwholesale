@@ -77,12 +77,12 @@
               {% if collection_url != blank %}
                 href="{{ collection_url }}"
               {% endif %}
-              class="collection-card {% if block.settings.text_position contains 'place-self-end' %}collection-card--reverse-transition{% endif %} shadow"
+              class="collection-card {% if block.settings.text_position contains 'place-self-end' %}collection-card--reverse-transition{% endif %} shadow block_{{ block.id }}"
               reveal-js
+              style="background: {{ block.settings.box_color }}"
             >
               <div
                 class="content-over-media group rounded-sm"
-                style="--content-over-media-overlay: {{ block.settings.overlay_color.rgb }} / {{ block.settings.overlay_opacity | divided_by: 100.0 }}"
               >
                 {%- if collection != blank -%}
                   {% comment %}
@@ -416,20 +416,10 @@
           "default": "#ffffff"
         },
         {
-          "type": "color",
-          "id": "overlay_color",
-          "label": "Overlay",
-          "default": "#000000"
-        },
-        {
-          "type": "range",
-          "id": "overlay_opacity",
-          "label": "Overlay opacity",
-          "min": 0,
-          "max": 100,
-          "step": 1,
-          "unit": "%",
-          "default": 30
+          "type": "color_background",
+          "id": "box_color",
+          "label": "Box Color",
+          "default": "linear-gradient(#ffffff, #000000)"
         }
       ]
     }
