@@ -131,8 +131,8 @@
         "quick_add": "none",
         "columns_mobile": "1",
         "swipe_on_mobile": true,
-        "padding_top": 0,
-        "padding_bottom": 36
+        "padding_top": 60,
+        "padding_bottom": 60
       }
     },
     "collection_slider_MKDqTG": {
@@ -142,7 +142,6 @@
           "type": "collection",
           "settings": {
             "collection": "afternoon",
-            "image": "shopify://shop_images/DeepZzzsSleepStudy_8296cfec-2834-4583-a8d8-e8ed98f90d43.jpg",
             "subheading": "sddsfsdfsdf fsdfsdf",
             "title": "sdfdsf",
             "url": "",
@@ -150,15 +149,13 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "box_color": "linear-gradient(#ffffff, #000000)"
           }
         },
         "collection_x8mwzy": {
           "type": "collection",
           "settings": {
             "collection": "afternoon",
-            "image": "shopify://shop_images/DeepZzzsSleepStudy_8296cfec-2834-4583-a8d8-e8ed98f90d43.jpg",
             "subheading": "sddsfsdfsdf fsdfsdf",
             "title": "sdfdsf",
             "url": "",
@@ -166,15 +163,13 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "box_color": "linear-gradient(#ffffff, #000000)"
           }
         },
         "collection_ELGmDJ": {
           "type": "collection",
           "settings": {
             "collection": "afternoon",
-            "image": "shopify://shop_images/DeepZzzsSleepStudy_8296cfec-2834-4583-a8d8-e8ed98f90d43.jpg",
             "subheading": "sddsfsdfsdf fsdfsdf",
             "title": "sdfdsf",
             "url": "",
@@ -182,8 +177,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "overlay_color": "#000000",
-            "overlay_opacity": 30
+            "box_color": "linear-gradient(#ffffff, #000000)"
           }
         }
       },
