@@ -73,10 +73,7 @@
             {%- assign collection = block.settings.collection -%}
             {%- assign collection_url = block.settings.url | default: collection.url -%}
 
-            <a
-              {% if collection_url != blank %}
-                href="{{ collection_url }}"
-              {% endif %}
+            <div
               class="collection-card {% if block.settings.text_position contains 'place-self-end' %}collection-card--reverse-transition{% endif %} shadow block_{{ block.id }}"
               reveal-js
               style="background: {{ block.settings.box_color }}"
@@ -130,10 +127,8 @@
                     {% endcomment %}
                   </div>
 
-                  {%- if block.settings.collection_icon != blank -%}
-                    <div class="icon-collection">
-                      <img loading="lazy" src="{{ block.settings.collection_icon | img_url: 'master' }}" alt="icon">
-                    </div>
+                  {%- if collection_url != blank -%}
+                    <a href="{{ collection_url }}" class="button">Shop All</a>
                   {%- endif -%}
 
                 {%- else -%}
@@ -160,7 +155,7 @@
                   </div>
                 {%- endif -%}
               </div>
-            </a>
+            </div>
           {%- endfor -%}
         </collection-list>
       </scroll-carousel>
@@ -313,17 +308,6 @@
           "info": "Default to collection title."
         },
         {
-          "type": "url",
-          "id": "url",
-          "label": "Link",
-          "info": "Default to collection URL."
-        },
-        {
-          "type": "image_picker",
-          "id": "collection_icon",
-          "label": "Collection Icon"
-        },
-        {
           "type": "select",
           "id": "heading_tag",
           "label": "Heading style",
@@ -410,10 +394,9 @@
           "default": "#ffffff"
         },
         {
-          "type": "color_background",
+          "type": "color",
           "id": "box_color",
-          "label": "Box Color",
-          "default": "linear-gradient(#ffffff, #000000)"
+          "label": "Box Color"
         }
       ]
     }
