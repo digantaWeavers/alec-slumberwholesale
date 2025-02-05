@@ -203,6 +203,120 @@
         "heading_gradient": ""
       }
     },
+    "collection_slider_v2_UNnRqz": {
+      "type": "collection-slider-v2",
+      "blocks": {
+        "collection_XrVpVh": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-sellers",
+            "subheading": "Text goes here to explain some details for the form",
+            "title": "CBD",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": "#8a92bd"
+          }
+        },
+        "collection_3jALw8": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-sellers",
+            "subheading": "Text goes here to explain some details for the form",
+            "title": "CBD",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": "#8a92bd"
+          }
+        },
+        "collection_YieQVJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-sellers",
+            "subheading": "Text goes here to explain some details for the form",
+            "title": "CBD",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": "#8a92bd"
+          }
+        },
+        "collection_YGdn3p": {
+          "type": "collection",
+          "settings": {
+            "collection": "top-sellers",
+            "subheading": "Text goes here to explain some details for the form",
+            "title": "CBD",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": "#8a92bd"
+          }
+        },
+        "collection_pJ6V3V": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": ""
+          }
+        },
+        "collection_8dTgcX": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": ""
+          }
+        },
+        "collection_4WE83R": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "subheading": "",
+            "title": "",
+            "heading_tag": "h2",
+            "text_position": "place-self-center text-center",
+            "text_color": "#ffffff",
+            "box_color": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_XrVpVh",
+        "collection_3jALw8",
+        "collection_YieQVJ",
+        "collection_YGdn3p",
+        "collection_pJ6V3V",
+        "collection_8dTgcX",
+        "collection_4WE83R"
+      ],
+      "settings": {
+        "full_width": true,
+        "stack_collections": true,
+        "collections_per_row": 4,
+        "show_progress_bar": false,
+        "subheading": "",
+        "title": "Shop by Ingredient",
+        "content": "",
+        "link_url": "",
+        "link_text": "Shop all",
+        "background": "",
+        "background_gradient": "",
+        "text_color": "",
+        "heading_color": "",
+        "heading_gradient": ""
+      }
+    },
     "happy_slumber_MAehWX": {
       "type": "happy-slumber",
       "blocks": {
@@ -328,6 +442,7 @@
     "home_multicolumn_4pw64J",
     "featured_collection_TAYXbJ",
     "collection_slider_MKDqTG",
+    "collection_slider_v2_UNnRqz",
     "happy_slumber_MAehWX",
     "blog_list_trXmaq",
     "wholesale_partner_ckaRRj"
