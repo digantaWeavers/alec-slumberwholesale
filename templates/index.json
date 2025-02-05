@@ -149,7 +149,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "box_color": "linear-gradient(#ffffff, #000000)"
+            "box_color": "linear-gradient(180deg, rgba(120, 96, 158, 1), rgba(178, 150, 223, 1) 100%)"
           }
         },
         "collection_x8mwzy": {
@@ -163,7 +163,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "box_color": "linear-gradient(#ffffff, #000000)"
+            "box_color": "linear-gradient(180deg, rgba(57, 68, 148, 1), rgba(115, 123, 182, 1) 100%)"
           }
         },
         "collection_ELGmDJ": {
@@ -177,7 +177,7 @@
             "heading_tag": "h2",
             "text_position": "place-self-center text-center",
             "text_color": "#ffffff",
-            "box_color": "linear-gradient(#ffffff, #000000)"
+            "box_color": "linear-gradient(180deg, rgba(231, 147, 85, 1), rgba(237, 179, 137, 1) 100%)"
           }
         }
       },
