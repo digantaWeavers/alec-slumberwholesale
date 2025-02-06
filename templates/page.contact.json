@@ -37,7 +37,7 @@
             "info_msg": "Co-branding opportunities",
             "info_url": "#",
             "text_color": "#f4f4f4",
-            "info_bg_color": "radial-gradient(rgba(118, 129, 206, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+            "info_bg_color": "linear-gradient(0deg, rgba(118, 129, 206, 1), rgba(57, 68, 148, 1) 100%)"
           }
         },
         "information_QDR888": {
@@ -47,7 +47,7 @@
             "info_msg": "Affiliate link opportunities",
             "info_url": "#",
             "text_color": "#f4f4f4",
-            "info_bg_color": "radial-gradient(rgba(215, 166, 129, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+            "info_bg_color": "linear-gradient(0deg, rgba(215, 166, 129, 1), rgba(231, 147, 85, 1) 100%)"
           }
         },
         "information_Be9mj4": {
@@ -57,7 +57,7 @@
             "info_msg": "Up to 60% savings on retail prices",
             "info_url": "#",
             "text_color": "#f4f4f4",
-            "info_bg_color": "radial-gradient(rgba(80, 196, 169, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+            "info_bg_color": "linear-gradient(0deg, rgba(194, 224, 217, 1), rgba(80, 196, 169, 1) 100%)"
           }
         },
         "information_Jw7iMh": {
@@ -67,7 +67,7 @@
             "info_msg": "Exclusive product access",
             "info_url": "",
             "text_color": "#f4f4f4",
-            "info_bg_color": "radial-gradient(rgba(225, 184, 185, 1) 59%, rgba(0, 0, 0, 1) 100%)"
+            "info_bg_color": "linear-gradient(0deg, rgba(216, 118, 120, 1), rgba(225, 184, 185, 1) 100%)"
           }
         }
       },
