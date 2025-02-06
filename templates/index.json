@@ -43,13 +43,18 @@
             "text": "Over 50,000+ sleeper trust Slumber.",
             "text_style": "body"
           }
+        },
+        "images_CJHYYC": {
+          "type": "images",
+          "settings": {}
         }
       },
       "block_order": [
         "text_w4GqqR",
         "heading_hKkB9Q",
         "buttons_4G9XFQ",
-        "text_GdKf9B"
+        "text_GdKf9B",
+        "images_CJHYYC"
       ],
       "settings": {
         "image": "shopify://shop_images/home-banner.png",
