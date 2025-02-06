@@ -36,12 +36,20 @@
             "button_link_2": "shopify://collections/full-spectrum",
             "button_style_secondary_2": true
           }
+        },
+        "text_GdKf9B": {
+          "type": "text",
+          "settings": {
+            "text": "Over 50,000+ sleeper trust Slumber.",
+            "text_style": "body"
+          }
         }
       },
       "block_order": [
         "text_w4GqqR",
         "heading_hKkB9Q",
-        "buttons_4G9XFQ"
+        "buttons_4G9XFQ",
+        "text_GdKf9B"
       ],
       "settings": {
         "image": "shopify://shop_images/home-banner.png",
