@@ -108,7 +108,7 @@
         "button_text": "Create your bundle",
         "button_link": "#",
         "lower_text": "SLEEP. LIVE. ENERGY.",
-        "button_bg_color": "#f4f4f4",
+        "button_bg_color": "#f4f9fc",
         "background_gradient": "radial-gradient(rgba(121, 128, 252, 1), rgba(215, 204, 250, 1) 100%, rgba(247, 197, 204, 1) 100%)"
       }
     },
