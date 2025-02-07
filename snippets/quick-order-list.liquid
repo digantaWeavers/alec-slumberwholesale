@@ -28,7 +28,6 @@
       method="post"
       id="QuickOrderList"
     >
-      <h5>Order boxes</h5>
       <div class="quick-order-list__container" id="main-variant-items">
         <div class="js-contents">
           <table class="quick-order-list__table">
@@ -38,14 +37,11 @@
             <thead>
               <tr>
                 <th class="caption-with-letter-spacing" scope="col">
-                  {% comment %}
-                    {%- if product.has_only_default_variant -%}
-                      {{ 'sections.quick_order_list.product' | t }}
-                    {%- else -%}
-                      {{ 'sections.quick_order_list.variant' | t }}
-                    {%- endif -%}
-                  {% endcomment %}
-                  Item
+                  {%- if product.has_only_default_variant -%}
+                    {{ 'sections.quick_order_list.product' | t }}
+                  {%- else -%}
+                    {{ 'sections.quick_order_list.variant' | t }}
+                  {%- endif -%}
                 </th>
                 <th class="large-up-hide right caption-with-letter-spacing" scope="col">
                   {%- if product.has_only_default_variant -%}
@@ -58,26 +54,20 @@
                   class="quick-order-list__table-heading--wide small-hide medium-hide caption-with-letter-spacing"
                   scope="col"
                 >
-                  {% comment %} {{ 'products.product.quantity.label' | t }} {% endcomment %}
-                  Quantity
+                  {{ 'products.product.quantity.label' | t }}
                 </th>
-                {% comment %}
-                  <th
-                    class="quick-order-list__table-heading--wide small-hide medium-hide caption-with-letter-spacing"
-                    scope="col"
-                  >
-                    {{ 'sections.cart.headings.price' | t }}
-                  </th>
-                {% endcomment %}
+                <th
+                  class="quick-order-list__table-heading--wide small-hide medium-hide caption-with-letter-spacing"
+                  scope="col"
+                >
+                  {{ 'sections.cart.headings.price' | t }}
+                </th>
                 <th class="small-hide medium-hide right caption-with-letter-spacing" scope="col">
-                  {% comment %}
-                    {%- if product.has_only_default_variant -%}
-                      {{ 'sections.quick_order_list.product_total' | t }}
-                    {%- else -%}
-                      {{ 'sections.quick_order_list.variant_total' | t }}
-                    {%- endif -%}
-                  {% endcomment %}
-                  Total
+                  {%- if product.has_only_default_variant -%}
+                    {{ 'sections.quick_order_list.product_total' | t }}
+                  {%- else -%}
+                    {{ 'sections.quick_order_list.variant_total' | t }}
+                  {%- endif -%}
                 </th>
               </tr>
             </thead>
@@ -137,7 +127,6 @@
         class="quick-order-list__total{% unless is_modal %} gradient{% endunless %}"
         id="quick-order-list-total-{{ product.id }}-{{ section.id }}"
       >
-        <h5>Summary</h5>
         <div class="quick-order-list-total__info">
           <div class="quick-order-list-total__column small-hide medium-hide">
             <div class="quick-order-list-buttons">
@@ -175,10 +164,10 @@
             </span>
           </div>
           <div class="quick-order-list__total-items">
-            <p class="h5">Total quantities</p>
             <span>
               {{ items_in_cart }}
             </span>
+            <p class="h5">{{ 'sections.quick_order_list.total_items' | t }}</p>
           </div>
           <div class="quick-order-list-total__price">
             <div class="totals__product-total">
