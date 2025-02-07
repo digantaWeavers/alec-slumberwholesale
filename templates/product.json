@@ -76,7 +76,7 @@
       ],
       "settings": {
         "enable_sticky_info": true,
-        "color_scheme": "",
+        "color_scheme": "scheme-506bbe5a-6fdf-46d3-a306-b596de23c37e",
         "media_size": "small",
         "constrain_to_viewport": false,
         "media_fit": "cover",
@@ -95,7 +95,7 @@
       "settings": {
         "show_image": true,
         "show_sku": true,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-506bbe5a-6fdf-46d3-a306-b596de23c37e",
         "padding_top": 36,
         "padding_bottom": 16
       }
