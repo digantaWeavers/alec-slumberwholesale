@@ -50,7 +50,7 @@
 
       {%- if section.settings.link_text != blank -%}
         <div class="btn-wrap">
-          <a href="{{ link_url }}" class="text-with-icon group button">
+          <a href="{{ link_url }}" class="text-with-icon group button btn">
             <span class="reversed-link">{{- section.settings.link_text | escape -}}</span>
             <span class="circle-chevron group-hover:colors">
               {%- render 'icon' with 'chevron-right-small', direction_aware: true -%}
