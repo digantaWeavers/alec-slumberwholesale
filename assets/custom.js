@@ -30,6 +30,12 @@ jQuery(document).ready(function ($) {
                     slidesToScroll: 1,
                 },
             },
+            {
+                breakpoint: 500,
+                settings: {
+                    slidesToShow: 2,
+                    slidesToScroll: 1,
+                },
             },
         ],
     });
