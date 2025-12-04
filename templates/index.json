@@ -40,7 +40,7 @@
         "text_GdKf9B": {
           "type": "text",
           "settings": {
-            "text": "Over 50,000+ sleeper trust Slumber.",
+            "text": "Over 150,000+ sleepers trust Slumber.",
             "text_style": "body"
           }
         },
@@ -59,8 +59,8 @@
         "images_CJHYYC"
       ],
       "settings": {
-        "image": "shopify://shop_images/home-banner.png",
-        "image_2": "shopify://shop_images/mobilebanner.png",
+        "image": "shopify://shop_images/banner-main_b578b367-e524-4c6e-af5d-b30e165e3b31.jpg",
+        "image_2": "shopify://shop_images/banner-main_b578b367-e524-4c6e-af5d-b30e165e3b31.jpg",
         "image_overlay_opacity": 40,
         "image_height": "small",
         "desktop_content_position": "middle-left",
